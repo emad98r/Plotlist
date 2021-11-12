@@ -356,6 +356,7 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 130vh;
+  margin-top: 3em;
 }
 
 .second-section .min-title {
@@ -1160,6 +1161,10 @@ header {
           align-items: center;
   padding: 0 7em;
   z-index: 30;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header .logo {
