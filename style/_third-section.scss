@@ -1,0 +1,305 @@
+.third-section {
+  overflow-x: hidden;
+  .titles {
+    .min-title {
+      color: black;
+      text-align: center;
+      font-weight: 600;
+      font-size: 2.5em;
+    }
+    .sub-title {
+      color: darken($light-color, 30);
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+  .offers {
+    width: 4282.81px;
+    display: flex;
+    flex-direction: row;
+    .offer {
+      background-color: darken($light-color, 5);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 25em;
+      margin-bottom: 1.5em;
+      img {
+        width: 40%;
+        height: 100%;
+      }
+      .details {
+        display: flex;
+        width: 60%;
+        padding: 0 3em;
+        align-items: flex-start;
+        justify-content: space-between;
+        .info {
+          h3 {
+            text-transform: capitalize;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            line-height: 1.2;
+            font-weight: 600;
+          }
+          h5 {
+            color: lighten($main-color, 20);
+            margin-bottom: 2em;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 1em;
+          }
+          .price {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 1em;
+            .material-icons {
+              margin-right: 0.8em;
+              color: $main-color;
+            }
+            p {
+              color: $bule-color;
+              padding: 0.2em 0 0 0;
+              font-weight: 400;
+            }
+          }
+          p {
+            color: lighten($main-color, 20);
+            margin-bottom: 1em;
+            font-weight: 600;
+            i {
+              color: $bule-color;
+              margin-left: 0.5em;
+              font-weight: 400;
+            }
+          }
+          .rooms {
+            li {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              &:first-of-type {
+                margin-bottom: 0.5em;
+              }
+              span {
+                margin-right: 1em;
+                color: $main-color;
+              }
+            }
+          }
+        }
+        .reviews {
+          display: flex;
+          flex-direction: column;
+          align-items: self-end;
+          p {
+            margin-bottom: 11em;
+            display: flex;
+            align-items: center;
+            span:last-of-type {
+              margin-right: 1em;
+            }
+          }
+          button {
+            background-color: white;
+            &:hover {
+              color: $light-color;
+              background-color: $main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.second-offers {
+  margin-left: 9em;
+  margin-right: 9em;
+}
+
+.offers {
+  animation: moving 15s infinite alternate;
+  -webkit-animation: moving 15s infinite alternate;
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-91em);
+    -webkit-transform: translateX(-91em);
+    -moz-transform: translateX(-91em);
+    -ms-transform: translateX(-91em);
+    -o-transform: translateX(-91em);
+  }
+  50% {
+    transform: translateX(-91em);
+    -webkit-transform: translateX(-91em);
+    -moz-transform: translateX(-91em);
+    -ms-transform: translateX(-91em);
+    -o-transform: translateX(-91em);
+  }
+  60% {
+    transform: translateX(-91em);
+    -webkit-transform: translateX(-91em);
+    -moz-transform: translateX(-91em);
+    -ms-transform: translateX(-91em);
+    -o-transform: translateX(-91em);
+  }
+  80% {
+    transform: translateX(-182em);
+    -webkit-transform: translateX(-182em);
+    -moz-transform: translateX(-182em);
+    -ms-transform: translateX(-182em);
+    -o-transform: translateX(-182em);
+  }
+  90% {
+    transform: translateX(-182em);
+    -webkit-transform: translateX(-182em);
+    -moz-transform: translateX(-182em);
+    -ms-transform: translateX(-182em);
+    -o-transform: translateX(-182em);
+  }
+  100% {
+    transform: translateX(-182em);
+    -webkit-transform: translateX(-182em);
+    -moz-transform: translateX(-182em);
+    -ms-transform: translateX(-182em);
+    -o-transform: translateX(-182em);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .third-section {
+    margin-top: 3em;
+    .offers {
+      width: 100%;
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none;
+      .offer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        img {
+          height: auto;
+          width: 93%;
+          margin: 1em auto;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        .details {
+          width: 100%;
+          padding: 0 0.5em;
+          flex-direction: column;
+          .info {
+            .rooms {
+              margin-bottom: 1em;
+            }
+          }
+          .reviews {
+            flex-direction: column;
+            align-self: flex-start;
+            margin-bottom: 1em;
+            p {
+              margin-bottom: 0.5em;
+              font-size: 1em;
+
+              span {
+                font-size: 0.8em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .second-offers {
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 920px) {
+  .third-section {
+    margin-top: 3em;
+    .offers {
+      width: 100%;
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none;
+      .offer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        img {
+          height: auto;
+          width: 93%;
+          margin: 1em auto;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        .details {
+          width: 100%;
+          padding: 0.5em 2em;
+          flex-direction: column;
+          .info {
+            .rooms {
+              margin-bottom: 1em;
+            }
+          }
+          .reviews {
+            flex-direction: column;
+            align-self: flex-end;
+            margin-bottom: 1em;
+            p {
+              margin-bottom: 0.5em;
+              font-size: 1em;
+
+              span {
+                font-size: 0.8em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .second-offers {
+      margin: 0;
+    }
+  }
+}

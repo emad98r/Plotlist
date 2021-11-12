@@ -1,0 +1,45 @@
+// colors ----------------
+$main-color: #6a778d;
+$bule-color: #2b2d42;
+$light-color: #f7f7f7;
+
+// fonts ----------------
+$main-font: "Montserrat", sans-serif;
+
+// button ---------
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 13em;
+  height: 3em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: $main-font;
+  padding: 0 0.5em;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
